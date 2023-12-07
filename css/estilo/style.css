@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    border: 1px dotted black;
+    background-color: black;
+    color: white;
+    font-family: cursive
+}
+span {
+    color: cyan;
+}
+h2{
+    border: rebeccapurple;
+    background-color: rebeccapurple;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+h3 {
+    border: 1px dotted lightblue;
+    background-color: lightblue;
+    color: darkblue;
+    text-decoration: underline;
+    text-align: right;
+    font-family: cursive;
+    font-weight: 100;
+}

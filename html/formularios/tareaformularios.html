@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formulario de registro</h1>
+    <p>Nombres:* <input type="text" name="first_name"></p>
+    <p>Apellidos:* <input type="text" name="last_name"></p>
+    <p>Correo eléctronico:* <input type="email" name="email"></p>
+    <p>Contraseña:* <input type="password" name="password"></p>
+    <p>Confirmar contraseña:* <input type="password" name="password"></p>
+    <p>Fecha de nacimiento: <input type="date" name="dub"></p>
+    <p>Genero: <input type="radio" name="font" value="normal" id="normal">
+        <label for="normal">Masculino</label>
+        <input type="radio" name="font" value="normal" id="normal">
+        <label for="normal">Femenino</label>
+    <input type="radio" name="font" value="normal" id="normal">
+    <label for="normal">No binario</label>
+    <input type="radio" name="font" value="normal" id="normal">
+    <label for="normal">Prefiero no responder</label></p>
+    <p>Una descripción corta sobre mí:</p>
+        <textarea name="comment" cols="35" rows="4"></textarea>
+    <p>Idioma favorito: <select name="language">
+        <option value="JavaScript">JavaScript</option>
+        <option value="Español">Español</option>
+        <option value="English">English</option>
+        <option value="Deutsch">Deutsch</option>
+    </select></p>
+    <div>
+        <input type="checkbox" name="offers" 
+        id="offers" checked >
+        <label for="offers">Me gustaría 
+        recibir correos con ofertas.</label>
+    </div>
+    <br>
+    <input type="submit" value="Crear cuenta">
+    <p>* Campo obligatorio</p>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiempo Dojo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!--El pronóstico del clima en la tarea corresponde al clima de Calama entre el día 06/12/2023 y el 09/12/2023.-->
+    <div class="top">
+        <div class="nav">
+            <h1>El Tiempo</h1>
+            <ul class="links">
+                <li onclick="loading()"><a href="#">Antofagasta</a></li>
+                <li onclick="loading()"><a href="#">Santiago</a></li>
+                <li onclick="loading()"><a href="#">Viña del Mar</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="subtitle-line">
+            <h2>Calama</h2>
+            <form>
+                <label>Mostrar temperatura en </label>
+                <select name="temperature-scale" onchange="convert(this)">
+                    <option>°C</option>
+                    <option>°F</option>
+                </select>
+            </form>
+        </div>
+        <div class="row">
+            <div class="forecast">
+                <h1>Hoy</h1>
+                <img src="img/some_sun.png" alt="rain">
+                <p>Soleado</p>
+                <p class="temperatures">
+                    <span class="high" id="temp1">27</span>
+                    <span class="low" id="temp2">8</span>
+                </p>
+            </div>
+            <div class="forecast">
+                <h1>Mañana</h1>
+                <img src="img/some_sun.png" alt="sun">
+                <p>Soleado</p>
+                <p class="temperatures">
+                    <span class="high" id="temp3">27</span>
+                    <span class="low" id="temp4">8</span>
+                </p>
+            </div>
+            <div class="forecast">
+                <h1>Viernes</h1>
+                <img src="img/some_sun.png" alt="clouds">
+                <p>Soleado</p>
+                <p class="temperatures">
+                    <span class="high" id="temp5">27</span>
+                    <span class="low" id="temp6">10</span>
+                </p>
+            </div>
+            <div class="forecast">
+                <h1>Sabado</h1>
+                <img src="img/some_sun.png" alt="sun">
+                <p>Soleado</p>
+                <p class="temperatures">
+                    <span class="high" id="temp7">29</span>
+                    <span class="low" id="temp8">11</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="cookie-policy">
+            <img src="img/cookie.png" alt="cookie">
+            <div class="text">
+                <h2>¡Alto! Hora de las Cookies.</h2>
+                <p>Usamos cookies (lamentablemente no las comestibles) para personalizar el contenido y los anuncios, proporcionar funciones de redes sociales y analizar el tráfico de nuestro sitio. <a href="#">Leer más...</a></p>
+            </div>
+            <button class="btn" onclick="accept()">Aceptar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

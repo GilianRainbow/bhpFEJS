@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  body{
+      background-color: white;
+  }
+  .nav {
+    color: white;
+    height: 80px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav a {
+      text-decoration: none;
+      color: white;
+    } 
+  .top{
+    background-color: turquoise
+  }
+  .nav-title {
+    font-size: 3.2rem;
+  }
+  .nav-links {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0 auto;
+    color: white;
+  }
+  .nav-links2 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0 auto;
+    color: white;
+  }
+  .animal {
+    width: 150px;
+    background-color: rgb(135, 199, 193);
+  }
+  .city {
+    width: 150px;
+    background-color: rgb(135, 199, 193);
+  }
+  .donate {
+    background-color: rgb(255, 255, 255);
+    width: 115px;
+    height: 40px;
+    color: rgb(194, 14, 194);
+    border: 4px solid rgb(194, 14, 194);
+    font-size: 20px;
+    box-shadow: 3px 3px black;
+  }
+  .frd {
+    background-color: purple;
+    color: white;
+    width: 200px;
+    height: 30px;
+    border: 2px solid black;
+    box-shadow: 2px 2px black;
+}
+.row { 
+    width: 1200px;
+    margin: 0 auto; 
+}
+.flex-2 { 
+    flex: 2;
+}
+.box {
+    background-color: #fff;
+    margin-top: 30px;
+    padding: 30px;
+    border: 2px solid #999;
+}
+.definition {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f3f3f3;
+}
+.left {
+    flex: 1;
+    text-align: center;
+}
+.start {
+    display: flex;
+    align-items: center;
+}
+.pet {
+    background-color: turquoise;
+    color: white;
+    width: 200px;
+    height: 50px;
+}

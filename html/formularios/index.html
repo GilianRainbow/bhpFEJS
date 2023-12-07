@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <p>Nombres <input type="text" name="first_name"></p>
+    <p>Números <input type="number" name="age"></p>
+    <p>Contraseñas <input type="password" name="password">
+    <p>Fechas <input type="date" name="dub"></p>
+    <p>Colores <input type="color" name="text_color"></p>
+    <input type="radio" name="font" value="bold" id="bold">
+<label for="bold"><strong>Negrita</strong></label>
+<input type="radio" name="font" value="normal" id="normal">
+<label for="normal">Normal</label>
+<input type="checkbox" name="accept" id="accept">
+<label for="accept">Estoy de acuerdo</label>
+<br>
+<textarea name="comment" cols="20" rows="3"></textarea>
+<br>
+<select name="animal">
+    <option>Perros</option>
+    <option>Gatos</option>
+    <option>Ratas</option>
+    <option>Pajaros</option>
+</select>
+<form action="/process" method="post">
+    <div>
+        <label>Nombre: </label>
+        <input type="text" name="name" 
+        placeholder="Tu Nombre..." >
+    </div>
+    <div>
+        <label>Email: </label>
+        <input type="text" name="email" 
+        placeholder="Tu correo..." >
+    </div>
+    <div>
+        <input type="checkbox" name="offers" 
+        id="offers" checked >
+        <label for="offers">Me gustaría 
+        recibir correos con ofertas.</label>
+    </div>
+    <input type="submit" value="Sign up" >
+</form>
+</body>
+</html>

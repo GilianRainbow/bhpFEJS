@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Pet Shelter</title>
+</head>
+<body>
+    <div class="top">
+        <nav class="nav">
+            <h1 class="nav-title"><img src="assets/heart-light.png" alt="icon-s">Pet Shelter</h1>
+            <ul class="nav-links2">
+                <li>Find a Pet</li>
+                <li>About</li>
+                <li><button class="btn donate" onclick="hide(this)">Donate</button></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="nav-links">
+                <li>I´m looking for a<br>
+                    <img src="assets/paw-light.png" alt="icon-s">
+                    <select class="animal">
+                    <option>Any pet</option>
+                    <option>Cat</option>
+                    <option>Dog</option>
+                </select>
+                </li>
+                <li>in on near...<br>
+                    <img src="assets/pin-light.png" alt="icon-s">
+                    <input type="text" name="city" 
+                    placeholder="City or Zip Code" class="city" >    
+                </li>
+                <li><button class="btn frd">Find my new best friend</button></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="flex-2">
+            <div class="box definition">
+                <div class="left">
+                    <span class="start">
+                    <img src="assets/pepper.jpg" alt="" class="avatar-s">
+                    <h1><span>Pepper</span></h1>
+                    </span>
+                </div>
+                <p class="definition-text">Pepper is a slightly shy grey tabby, but she really loves showing her human affection.</p>
+                <div><p id="contador">0</p><p>petting(s)</p>
+                    <br>
+                    <button onclick="incrementar()" class="btn pet">Pet Pepper</button>
+                </div>
+            </div>
+            <div class="flex-2">
+                <div class="box definition">
+                    <span class="start">
+                    <img src="assets/bruce.jpg" alt="avatar-s">
+                    <h1><span>Bruce</span></h1>
+                    </span>
+                <p class="definition-text">Bruce is a loyal companion. He loves long walks an cold weather.</p>
+                <div><p id="contador2">0</p><p>petting(s)</p>
+                    <br>
+                    <button onclick="incrementar2()" class="btn pet">Pet Bruce</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="flex-2">
+                <div class="box definition">
+                    <span class="start">
+                    <img src="assets/oscar.jpg" alt="avatar-s">
+                    <h1><span>Oscar</span></h1>
+                    </span>
+                <p class="definition-text">Oscar is bright, energetic, and friendly. He is looking for a good home</p>
+                    <div><p id="contador3">0</p><p>petting(s)</p>
+                        <button class="btn pet" onclick="incrementar3()">Pet Oscar</button></div>
+                </div>
+            </div>
+    <script src="script.js"></script>
+</body>
+</html>

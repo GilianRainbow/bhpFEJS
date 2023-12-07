@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Me gusta</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="top">
+            <h2>Network</h2>
+        </nav>
+        <h1 class="centrado">Tu feed</h1>
+        <div class="row">
+            <div class="col-1">
+                <div class="usuario">
+                    <img src="img/user-circle.png" alt="" class="avatar">
+                    <p><a href="">Agregar un avatar</a></p>
+                    <h2>Gilian Cortez</h2>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="post">
+                    <div class="contenido">
+                        <h2>Neil M</h2>
+                        <div class="likes">
+                            <span id="post-1"> 9 likes(s)</span>
+                            <button class="btn-like" onclick="like(0)">Like</button>
+                        </div>
+                    </div>
+                    <p> Acabo de configurar este nuevo bot de Discord, <br> déjenme saber lo que piensan. <a href="#link">Link</a></p>
+                </div>
+                <div class="post">
+                    <div class="contenido">
+                        <h2>Nichole K</h2>
+                        <div class="likes">
+                            <span id="post-2"> 12 likes(s)</span>
+                            <button class="btn-like" onclick="like(1)">Like</button>
+                        </div>
+                    </div>
+                    <p> Acabo de terminar mi <a href="#next"> próximo cómic</a> échale un vistazo. </p>
+                </div>
+                <div class="post">
+                    <div class="contenido">
+                        <h2>Jim R</h2>
+                        <div class="likes">
+                            <span id="post-3"> 9 likes(s)</span>
+                            <button class="btn-like" onclick="like(2)">Like</button>
+                        </div>
+                    </div>
+                    <p> No puedo dejar de escuchar el <a href="#new">nuevo album</a> ¿Quién más lo enlaza?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

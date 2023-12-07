@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoLab</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="top">
+        <div class="nav-container">
+            <h1>VideoLab</h1>
+            <input type="text" placeholder="Buscar" name="query" class="search">
+            <button class="btn" onclick="login(this)">Entrar</button>
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="col-l">
+            <video src="vod/Hamsterscaredoftouching.mp4" height="400" controls></video>
+            <div class="row">
+                <div class="start">
+                    <h1>Hamster Scared of Touching</h1>
+                    <h3>67K Views | February, 19, 2020</h3>
+                    <div class="user">
+                        <img src="img/user.png" alt="user-circle" class="avatar-s">
+                        <span class="user-name">Wide web minute</span>
+                    </div>
+                </div>
+                <button class="btn" onclick="subscribe(this)">Suscribirme</button>
+            </div>
+        </div>
+        <div class="col-r">
+            <h3 class="sub-header">Siguiente Video</h3>
+            <div class="video-small">
+                <video src="vod/RickAstleyNeverGonaGiveYouUpOfficialMusicVideo.mp4" muted loop onmouseover="playVideo(this)" onmouseout="pauseVideo(this)" class="vid-s"></video>
+                <span class="video-title">Not a Rick Roll</span>
+            </div>
+            <div class="video-small">
+                <img src="img/clickbaitcat.jpg" alt="video placeholder" class="vid-s">
+                <span class="video-title">10 Facts About ET's Cat!</span>
+            </div>
+            <div class="video-small">
+                <img src="img/worststarwarscosplay.webp" alt="video placeholder" class="vid-s">
+                <span class="video-title">5 Cosplay Tips</span>
+            </div>
+            <div class="video-small">
+                <img src="img/video-placeholder.png" alt="video placeholder" class="vid-s">
+                <span class="video-title">Boy Battles Dinobot in Thunderdome</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
